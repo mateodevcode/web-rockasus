@@ -9,14 +9,15 @@ __v0_jsx-dev-runtime.ts
 # Environment variables
 .env*.local
 
-# Rockasus installer - ignora binarios pero conserva carpeta
-public/installer/*.exe
-public/installer/*.msi
-public/installer/*.dmg
-public/installer/*.zip
-public/installer/*.AppImage
-public/installer/*.deb
-public/installer/*.rpm
+# Rockasus installer - se incluye .msi para Vercel (sacar si usas Releases)
+# public/installer/*.exe
+# public/installer/*.msi
+# public/installer/*.dmg
+# public/installer/*.zip
+# public/installer/*.AppImage
+# public/installer/*.deb
+# public/installer/*.rpm
+!public/installer/*.msi
 
 # Common ignores
 node_modules
